@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# Nails by Lufuno 💅
 
-## Project info
+## Overview
+Nails by Lufuno is a modern, stylish website for a talented nail technician. The site allows clients to view nail services, browse a gallery of nail designs, and book appointments instantly via WhatsApp. Designed to be responsive and visually engaging, the website brings the nail salon experience online.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Motivation
+The goal was to create an easy-to-use online presence for a small business, helping clients book appointments quickly while showcasing the nail artist’s work in a clean, interactive format.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Features
+- Browse a gallery of nail designs and styles
+- Quick WhatsApp booking for fast appointments
+- Responsive and mobile-friendly design
+- Smooth animations and interactive UI components
+- Eye-catching branding and favicon
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
+- **React 18** – Frontend library
+- **TypeScript** – Type safety
+- **Vite** – Fast build and dev server
+- **Tailwind CSS** – Responsive styling
+- **Framer Motion** – Smooth animations
+- **React Router DOM** – Client-side routing
+- **React Hook Form** – Form handling
+- **Lucide React** – Icon library
+- **Vercel** – Free hosting and deployment
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Live Demo
+Check out the website live here: [https://nails-by-lufuno.vercel.app](https://nails-by-lufuno.vercel.app)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Future Improvements
+- Add user reviews and testimonials
+- Enhanced gallery filters by style or color
+- Newsletter signup for promotions
+- Integration with a backend for booking history
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Author
+**Titelo Maleka**  
+Computer Science Student
