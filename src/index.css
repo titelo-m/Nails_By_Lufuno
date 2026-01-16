@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 270 10% 8%;
+    --foreground: 330 20% 95%;
+
+    --card: 270 15% 12%;
+    --card-foreground: 330 20% 95%;
+
+    --popover: 270 15% 10%;
+    --popover-foreground: 330 20% 95%;
+
+    --primary: 330 85% 60%;
+    --primary-foreground: 270 10% 8%;
+
+    --secondary: 330 30% 20%;
+    --secondary-foreground: 330 20% 95%;
+
+    --muted: 270 10% 18%;
+    --muted-foreground: 330 15% 65%;
+
+    --accent: 330 60% 45%;
+    --accent-foreground: 330 20% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 330 20% 20%;
+    --input: 330 20% 20%;
+    --ring: 330 85% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --pink-glow: 330 100% 65%;
+    --pink-soft: 330 40% 75%;
+    --pink-dark: 330 50% 25%;
+    --gold: 45 80% 60%;
+    --cream: 30 30% 92%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(270 15% 8%) 0%, hsl(330 30% 12%) 50%, hsl(270 15% 8%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(270 15% 14%) 0%, hsl(270 15% 10%) 100%);
+    --gradient-pink: linear-gradient(135deg, hsl(330 85% 55%) 0%, hsl(340 80% 65%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(330 100% 65% / 0.3) 0%, transparent 70%);
+
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(330 100% 65% / 0.3);
+    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.3);
+    --shadow-button: 0 4px 20px hsl(330 100% 65% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-pink);
+  }
+
+  .glow-pink {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .btn-glow {
+    box-shadow: var(--shadow-button);
+    transition: all 0.3s ease;
+  }
+
+  .btn-glow:hover {
+    box-shadow: 0 6px 30px hsl(330 100% 65% / 0.6);
+    transform: translateY(-2px);
+  }
+
+  .glass {
+    backdrop-filter: blur(10px);
+    background: hsl(270 15% 12% / 0.8);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .text-cream {
+    color: hsl(var(--cream));
+  }
+
+  .text-pink-soft {
+    color: hsl(var(--pink-soft));
+  }
+
+  .bg-pink-glow {
+    background-color: hsl(var(--pink-glow));
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(270 10% 8%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(330 50% 30%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(330 85% 50%);
+}
