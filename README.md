@@ -1,4 +1,4 @@
-# Nails by Lufuno 💅
+# Nails by Lufuno 
 
 ## Overview
 Nails by Lufuno is a modern, stylish website for a talented nail technician. The site allows clients to view nail services, browse a gallery of nail designs, and book appointments instantly via WhatsApp. Designed to be responsive and visually engaging, the website brings the nail salon experience online.
