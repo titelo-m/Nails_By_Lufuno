@@ -18,19 +18,23 @@ const queryClient = new QueryClient();
 const App = () => {
 
   useEffect(() => {
+    // 1. Add GA script to head
     const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX";
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-CWEG31JSDT";
     script.async = true;
     document.head.appendChild(script);
 
+    // 2. Initialize dataLayer and gtag function
     window.dataLayer = window.dataLayer || [];
-
     function gtag(...args: any[]) {
       window.dataLayer.push(args);
     }
 
+    // 3. Configure GA with your Measurement ID
     gtag("js", new Date());
-    gtag("config", "G-XXXXXXXX");
+    gtag("config", "G-CWEG31JSDT", {
+      page_path: window.location.pathname,
+    });
   }, []);
 
   return (
